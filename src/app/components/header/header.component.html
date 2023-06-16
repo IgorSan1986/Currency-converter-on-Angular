@@ -1,0 +1,24 @@
+<h2 class="card-header mb-4 text-center">{{ headerTitle | titlecase }}</h2>
+
+<div class="row mb-3 px-3">
+	<div class="col-sm-6">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title text-center">Курс USD</h5>
+				<div class="text-center" data-value="USD">
+					{{ usdToUah | number : '2.2-2' }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title text-center">Курс EUR</h5>
+				<div class="text-center" data-value="EUR">
+					{{ eurToUah | number : '2.2-2' }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
